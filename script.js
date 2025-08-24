@@ -7,10 +7,10 @@ document.getElementById('login-btn')
     const pinNumber=1234
 
     const mobileNumberValue=document.getElementById('mobile-number').value
-    const mobileNumberValueConverted=parseInt(mobileNumber)
+    const mobileNumberValueConverted=parseInt(mobileNumberValue)
     
     const pinNumberValue = document.getElementById('pin-number').value
-   const pinNumberValueConverted=parseInt(pinNumber)
+   const pinNumberValueConverted=parseInt(pinNumberValue)
 
 
     if(mobileNumberValueConverted === mobileNumber && pinNumberValueConverted === pinNumber){

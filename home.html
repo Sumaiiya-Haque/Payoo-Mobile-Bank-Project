@@ -70,34 +70,45 @@
           <img class="mx-auto" src="./assets/wallet1.png" alt="" />
           <h2>Cash Out</h2>
         </div>
-        <div class="border-gray-400 bg-white border text-center p-4">
+
+        <div
+          id="transfer-button"
+          class="border-gray-400 bg-white border text-center p-4"
+        >
           <img class="mx-auto" src="./assets/wallet1.png" alt="" />
           <h2>Transfer Money</h2>
         </div>
-        <div class="border-gray-400 bg-white border text-center p-4">
+
+        <div
+          id="get-bonus-button"
+          class="border-gray-400 bg-white border text-center p-4"
+          
+        >
           <img class="mx-auto" src="./assets/wallet1.png" alt="" />
           <h2>Get Bonus</h2>
         </div>
-        <div class="border-gray-400 bg-white border text-center p-4">
+
+        <div id="pay-bill-button" class="border-gray-400 bg-white border text-center p-4">
           <img class="mx-auto" src="./assets/wallet1.png" alt="" />
           <h2>Pay Bill</h2>
         </div>
         <div class="border-gray-400 bg-white border text-center p-4">
           <img class="mx-auto" src="./assets/wallet1.png" alt="" />
-          <h2>Add Money</h2>
+          <h2>Transactions</h2>
         </div>
       </div>
     </div>
     <!-- form section -->
     <div class="form-section max-w-lg mx-auto">
       <!-- add money -->
+
       <div id="add-money-parent">
         <h1 class="my-5 font-black">Add Money</h1>
         <form action="" class="bg-white p-8">
           <div>
             <h1>Select a bank</h1>
             <select id="select-bank" class="select !rounded-4xl !w-full">
-              <option disabled selected class="!bg-gray-500">
+              <option class="!bg-gray-500">
                 pick a Bank
               </option>
               <option>IFIC bank</option>
@@ -146,7 +157,7 @@
 
       <!-- cash out  -->
 
-      <div id="cash-out-parent">
+      <div id="cash-out-parent" style="display: none">
         <h1 class="my-5 font-black">Cash Out</h1>
         <form action="" class="bg-white p-8">
           <div></div>
@@ -182,11 +193,131 @@
           </div>
           <button
             class="btn !bg-blue-700 mt-5 w-full !rounded-3xl !text-white"
-            id="withdraw-btn">
+            id="withdraw-btn"
+          >
             WithDraw Money
           </button>
         </form>
       </div>
+      <!-- transfer money -->
+
+      <div id="transfer-money-parent" style="display: none">
+        <h1 class="my-5 font-black">Transfer Money</h1>
+        <form action="" class="bg-white p-8">
+          <div></div>
+          <div>
+            <label class="!pt-5">User Account Number</label>
+            <br />
+            <input
+              id="user-account-number"
+              type="text"
+              placeholder="Enter 11 digits number"
+              class="input mt-5 !rounded-4xl !w-full"
+            />
+          </div>
+          <div>
+            <label class="pt-5">Amount</label>
+            <br />
+            <input
+              id="transfer-amount"
+              type="text"
+              placeholder="Add amount to transfer"
+              class="input mt-5 !w-full !rounded-4xl bg-white"
+            />
+          </div>
+          <div>
+            <label class="pt-5">Pin Number</label>
+            <br />
+            <input
+              type="text"
+              placeholder="Enter 4 digit pin number"
+              class="input mt-5 !rounded-4xl !w-full"
+            />
+          </div>
+          <button class="btn !bg-blue-700 mt-5 w-full !rounded-3xl !text-white">
+            WithDraw Money
+          </button>
+        </form>
+      </div>
+
+      <!-- get bonus -->
+      <div id="get-bonus-parent" style="display: none;">
+        <h1 class="my-5 font-black">Get Bonus</h1>
+         <div>
+            <label class="pt-5">Enter Bonus Coupon</label>
+            <br />
+            <input
+              type="text"
+              placeholder="Enter your coupon"
+              class="input mt-5 !rounded-4xl !w-full"
+            />
+          </div>
+         <button class="btn !bg-blue-700 mt-5 w-full !rounded-3xl !text-white">
+            Get Bonus
+          </button>
+      </div>
+
+      <!-- pay bill -->
+        <div id="pay-bill-parent" style="display: none;">
+        <h1 class="my-5 font-black">Pay Bill</h1>
+        <form action="" class="bg-white p-8">
+          <div>
+            <h1>Select to Pay</h1>
+            <select id="select-bank" class="select !rounded-4xl !w-full">
+              <option class="!bg-gray-500">
+                Select Back
+              </option>
+              <option>IFIC bank</option>
+              <option>Amber</option>
+              <option>Velvet</option>
+            </select>
+          </div>
+          <div>
+            <label class="!pt-5">Biller Account Number</label>
+            <br />
+            <input
+              id="bank-number"
+              type="text"
+              placeholder="Enter account number"
+              class="input mt-5 !rounded-4xl !w-full"
+            />
+          </div>
+          <div>
+            <label class="pt-5">Amount to Pay</label>
+            <br />
+            <input
+              id="amount-add"
+              type="text"
+              placeholder="Add amount to pay"
+              class="input mt-5 !w-full !rounded-4xl bg-white"
+            />
+          </div>
+          <div>
+            <label class="pt-5">Pin Number</label>
+            <br />
+            <input
+             
+              type="text"
+              placeholder="Enter 4 digit pin number"
+              class="input mt-5 !rounded-4xl !w-full"
+            />
+          </div>
+          <button
+            class="btn !bg-blue-700 mt-5 w-full !rounded-3xl !text-white"
+            id="add-money-btn"
+          >
+            Pay Now
+          </button>
+        </form>
+      </div>
+
+      <!-- Transaction -->
+
+      <div id="transaction-parent">
+        <h1 class="my-5 font-black">Latest Payment</h1>
+
+      </div>
+
     </div>
 
     <script src="./home.js"></script>

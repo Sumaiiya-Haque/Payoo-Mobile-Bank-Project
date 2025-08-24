@@ -1,38 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Payoo MFS Project</title>
     <!-- tailwind cdn -->
-     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-     <!-- daisy ui cdn -->
-     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body class="bg-[#F4F5F7] h-[100vh] justify-center items-center flex flex-col">
-      <div class="h-[130px] w-[300px] bg-[url('./assets/bg.png')] bg-cover flex justify-center items-center">
-<img class=" " src="./assets/Group.png" alt="">
-        </div>
-    <form class=" w-[350px] bg-white rounded-2xl p-5">
-      
-<div class="">
-    <label class="mt-5">Mobile Number</label>
-    <br>
-    <input id="mobile-number"  type="text" placeholder="Type here" class="input mt-5 mb-5 rounded-3xl" />
-    <br>
-      <label class="pt-5">4 digit pin</label>
-    <br>
-    <input id="pin-number" type="text" placeholder="Type here" class="input mt-5 rounded-4xl " />
-    <br>
-    <button  class="btn  !bg-blue-700 mt-5 w-full !rounded-3xl " id="login-btn">Primary</button>
-</div>
-
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- daisy ui cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body
+    class="bg-[#F4F5F7] h-[100vh] justify-center items-center flex flex-col"
+  >
+    <div
+      class="h-[130px] w-[300px] bg-[url('./assets/bg.png')] bg-cover flex justify-center items-center"
+    >
+      <img class=" " src="./assets/Group.png" alt="" />
+    </div>
+    <form class="w-[350px] bg-white rounded-2xl p-5">
+      <div class="">
+        <label class="mt-5">Mobile Number</label>
+        <br />
+        <input
+          id="mobile-number"
+          type="text"
+          placeholder="Type here"
+          class="input mt-5 mb-5 rounded-3xl"
+        />
+        <br />
+        <label class="pt-5">4 digit pin</label>
+        <br />
+        <input
+          id="pin-number"
+          type="text"
+          placeholder="Type here"
+          class="input mt-5 rounded-4xl"
+        />
+        <br />
+        <button
+          class="btn !bg-blue-700 mt-5 w-full !rounded-3xl"
+          id="login-btn"
+        >
+          Primary
+        </button>
+      </div>
     </form>
 
-  
-
-
-   <script src="./script.js"></script> 
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>

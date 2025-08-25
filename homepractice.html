@@ -107,8 +107,9 @@
     <div class="form-section max-w-lg mx-auto">
       <!-- add money -->
 
-      <div class="form" id="add-money-parent">
+      <div id="add-money-parent">
         <h1 class="my-5 font-black">Add Money</h1>
+        <!-- form starts -->
         <form action="" class="bg-white p-8">
           <div>
             <h1>Select a bank</h1>
@@ -120,6 +121,7 @@
             </select>
           </div>
           <div>
+            <!-- ------ -->
             <label class="!pt-5">Bank Account Number</label>
             <br />
             <input
@@ -130,6 +132,7 @@
             />
           </div>
           <div>
+            <!-- ----- -->
             <label class="pt-5">Amount to Add</label>
             <br />
             <input
@@ -140,10 +143,11 @@
             />
           </div>
           <div>
+            <!-- --- -->
             <label class="pt-5">Pin Number</label>
             <br />
             <input
-              id="pin-number"
+              id="add-pin"
               type="text"
               placeholder="Type here"
               class="input mt-5 !rounded-4xl !w-full"
@@ -160,7 +164,7 @@
 
       <!-- cash out  -->
 
-      <div class="form" id="cash-out-parent" style="display: none">
+      <div id="cash-out-parent" style="display: none">
         <h1 class="my-5 font-black">Cash Out</h1>
         <form action="" class="bg-white p-8">
           <div></div>
@@ -188,7 +192,7 @@
             <label class="pt-5">Pin Number</label>
             <br />
             <input
-              id="pin-number"
+              id="add-pin"
               type="text"
               placeholder="Type here"
               class="input mt-5 !rounded-4xl !w-full"
@@ -204,7 +208,7 @@
       </div>
       <!-- transfer money -->
 
-      <div class="form" id="transfer-money-parent" style="display: none">
+      <div id="transfer-money-parent" style="display: none">
         <h1 class="my-5 font-black">Transfer Money</h1>
         <form action="" class="bg-white p-8">
           <div></div>
@@ -244,7 +248,7 @@
       </div>
 
       <!-- get bonus -->
-      <div class="form" id="get-bonus-parent" style="display: none">
+      <div id="get-bonus-parent" style="display: none">
         <h1 class="my-5 font-black">Get Bonus</h1>
         <div>
           <label class="pt-5">Enter Bonus Coupon</label>
@@ -261,7 +265,7 @@
       </div>
 
       <!-- pay bill -->
-      <div class="form" id="pay-bill-parent" style="display: none">
+      <div id="pay-bill-parent" style="display: none">
         <h1 class="my-5 font-black">Pay Bill</h1>
         <form action="" class="bg-white p-8">
           <div>
@@ -313,7 +317,7 @@
 
       <!-- Transaction -->
 
-      <div class="form" id="transaction-parent" style="display: none;">
+      <div id="transaction-parent" style="display: none;">
         <div class="flex justify-between items-center">
           <h1 class="my-5 font-black">Latest Payment</h1>
           <p class="text-gray-500">View All</p>
@@ -393,7 +397,7 @@
 
 
 
-    <script src="./home.js"></script>
-     <!-- <script src="./homepractice.js"></script> -->
+    <!-- <script src="./home.js"></script> -->
+     <script src="./homepractice.js"></script>
   </body>
 </html>

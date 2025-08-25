@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- tailwind cdn -->
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <h1 id="heading-id">hello</h1>
+
+    <div>
+      <button class="bg-amber-400 p-3 text-orange-50 font-extrabold rounded-br-4xl rounded-tl-4xl ml-5" id="btn-1">
+        button-1
+      </button>
+      <button id="btn-2">button-2</button>
+      <button id="btn-3">button-3</button>
+    </div>
+
+    <script>
+      function number(num) {
+        document.getElementById("heading-id").innerText = num;
+      }
+
+      document.getElementById("btn-1").addEventListener("click", function () {
+        number("how");
+      });
+
+      document.getElementById("btn-2").addEventListener("click", function () {
+        number("are");
+      });
+
+      document.getElementById("btn-3").addEventListener("click", function () {
+        number("you!");
+      });
+    </script>
+  </body>
+</html>
